@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styling/footer.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="footer">
+        <div class="top-section">
+            <div class="about">
+                <h3>
+                    <img src="{{ url_for('static', filename='images/Logo.svg') }}" alt="logo">
+                </h3>
+                <p>Introducing Medify, the game-changing solution to Nigeria's medication challenges.
+                    With the Medify mobile app, patients can easily compare medication prices, saving up to 30% on
+                    costs.
+                    Our prescription delivery service ensures convenient access to medications, saving millions of
+                    travel miles.
+                    We support medication adherence with personalized reminders, aiming to improve adherence rates by
+                    20%.
+                    Through data analytics, we generate insights for evidence-based policy recommendations, reducing
+                    healthcare disparities.
+                    Medify is revolutionizing medication access and empowering individuals for better health outcomes.
+                </p>
+            </div>
+            <div class="products">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Mobile Apps</a></li>
+                    <li><a href="#">Partners</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <h3>Contact</h3>
+                <p>(250) 784-592-013 <br>
+                    (234) 913-7433-295</p>
+                <p><a href=":mailto">abimbolaikus@gmail.com</a></p>
+                <div class="socials">
+                    <p>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="collab">
+                <h3>Partnership & Sponsorship</h3>
+                <p>For partnership and sponsorship, kindly fill the form below.
+                    Also signup for latest update.
+                </p>
+                <button class="pop">Here</button>
+                <div class="form">
+                    <div class="closer">
+                        <i class="fa-solid fa-times"></i>
+                    </div>
+                    <h3>Sponsorship and Collaboration</h3>
+                    <p>Thank you for considering to sponsor, collaborate, or sign up for our new updates.
+                        Fill the form below and expect a response within 24 hours.
+                    </p>
+                    <form class="input" action="">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <textarea type="text" placeholder="Message"></textarea>
+                        <p>In the message box, include your commitment.</p>
+                        <button>Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-section">
+            <p>© 2023 Beauty❤️. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        $('.pop, .closer').click(function () {
+            $('.form').toggleClass('active')
+        })
+    })
+</script>
+
+</html>

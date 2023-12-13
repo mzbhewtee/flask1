@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero</title>
+    <link rel="stylesheet" href="/static/styling/hero.css">
+
+<body>
+    <div class="hero">
+        <img class="below" src="{{ url_for('static', filename='images/Rectangle 8.png') }}" alt="">
+        <div class="info">
+            <h3>Medify: Your Health, Our Priority</h3>
+        </div>
+    </div>
+    <div class="main-hero">
+        <div class="main-hero-info">
+            <h1>Empowering <span>Health</span>, 
+                <br>One Click at a Time.</h1>
+            <p>Welcome to Medify - Your Health, Your Choice.</p>
+            <a href="/login" class="btn">Get Started</a>
+        </div>
+        <div class="main-hero-image">
+            <img class="one" src="{{ url_for('static', filename='images/Rectangle 9.png') }}" alt="">
+        </div>
+    </div>
+    <img class="two" src="{{ url_for('static', filename='images/image 1.png') }}" alt="">
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+.container {
+    margin-top: 20px;
+    background-color: #e1969656; 
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+.co-founders {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.co-founder {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.co-founder img {
+    max-width: 50%;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.co-founder h3 {
+    margin-top: 10px;
+    font-size: x-large;
+    margin-bottom: 2px;
+}   
+
+.co-founder p {
+    margin-top: 0;
+    font-size: medium;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+@media screen and (min-width: 912px) {
+    .co-founders {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .co-founder {
+        width: 30%;
+    }
+
+    .co-founder img {
+        max-width: 70%;
+    }
+}
